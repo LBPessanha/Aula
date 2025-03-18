@@ -1,0 +1,637 @@
+/* Global */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "MontSerrat", sans-serif;
+  color: #404040;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  background-color: #f4f5f7;
+}
+
+h1 {
+  font-size: 3.32rem;
+  line-height: 1;
+  font-weight: 600;
+}
+h2 {
+  font-size: 2.76rem;
+  line-height: 1.1;
+  font-weight: 400;
+}
+
+h3,
+.blog-titulopost,
+.rodape-titulo {
+  font-size: 2.3rem;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+strong {
+  font-weight: 600;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  padding: 1.02rem;
+  background-color: white;
+  box-shadow: inset 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 0.8rem;
+  font-family: inherit;
+  font-size: inherit;
+  color: #404040;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:: placeholder {
+  color: #757575;
+}
+
+.secao {
+  padding: 7.63rem 2rem;
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.container-blog,
+.container-diferenciais {
+  border-radius: 5rem;
+  box-shadow: inset 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.15);
+}
+.botao {
+  display: inline-block;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 2rem;
+  padding: 0.65rem 2.5rem;
+  color: white;
+  border: 0;
+  box-shadow: 0 0.21rem 0.8rem rgba(0, 0, 0, 0.15);
+  border-bottom: solid 0.4rem #993c38;
+  border-right: solid 0.4rem #993c38;
+}
+.realce-semibold {
+  font-weight: 600;
+}
+
+.hero-paragrafo,
+.comoajudar-lista,
+.comoajudar-p,
+.diferenciais-p,
+.rodape-subtitulo {
+  font-size: 1.92rem;
+  line-height: 1.3;
+}
+
+.caixa-gratuito-h3,
+.caixa-blog-h2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: inline-block;
+  padding: 0.42rem 1.6rem;
+  color: white;
+  border-radius: 1rem;
+  transform: rotate(-3deg) translate(-50%, -50%);
+  box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.15);
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 1.6rem 3.12rem;
+  box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+/*Temporário*/
+
+nav {
+  display: none;
+}
+
+.item-lista-cabecalho a {
+  color: #112e61;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.item-lista-cabecalho a:hover,
+.item-lista-cabecalho a:active {
+  color: #f60;
+}
+
+.item-lista-cabecalho.contem-filhos::after {
+  content: "\2bc6";
+}
+/* Hero */
+
+.secao-hero {
+  background-image: url(https://elegant-rabanadas-4b0397.netlify.app/Imagens/Formato%20Novo/BACKGROUN-banner-01.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-botao {
+  background-image: linear-gradient(180deg, #ff645e, #ff9253);
+}
+
+.hero-botao:hover {
+  border: solid 0.2rem #ff9253;
+  background-color: #ff9253;
+  background-image: none;
+}
+
+.iframe-video {
+  display: none;
+  aspect-ratio: 16/9;
+  width: 42rem;
+  border-radius: 2.5rem;
+}
+/*.hero-botao {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}*/
+
+/* Conteúdos Conteúdos */
+
+/* .gratuito-h2 {
+  font-size: 35px;
+  font-weight: 400;
+} */
+
+.secao-conteudos {
+  background-image: url(https://elegant-rabanadas-4b0397.netlify.app/Imagens/Formato%20Novo/BACKGROUN-banner-02.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caixa-cursos-hashtag {
+  position: relative;
+  box-shadow: inset 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.15);
+  border-radius: 2.5rem;
+  padding: 2rem;
+}
+
+.caixa-gratuito-h3 {
+  background-image: linear-gradient(90deg, #aa56e6, #6d42b9);
+}
+
+.circulo-logo-curso {
+  display: inline-block;
+  background-color: #e7e7e7;
+  box-shadow: inset 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.15);
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  padding: 1.02rem;
+}
+
+.circulo-logo-curso img {
+  width: 100%;
+}
+
+.img-conteudos {
+  width: 44rem;
+}
+
+.gratuito-realce {
+  color: #7a40be;
+  font-weight: 600;
+}
+
+.gratuito-h3 {
+  font-weight: 700;
+}
+
+.gratuito-link-lista:link,
+.gratuito-link-lista:visited {
+  display: inline-block;
+  padding: 0.42rem 3.12rem;
+  background-color: #eee;
+  border-radius: 2.5rem;
+  box-shadow: inset 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.15);
+  font-size: 1.92rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.gratuito-link-lista:hover,
+.gratuito-link-lista:active {
+  text-decoration: underline;
+}
+
+.gratuito-link-lista img {
+  width: 1.8rem;
+}
+
+/* Seção de Diferenciais */
+
+.caixa-diferenciais-h2 {
+  border-left: solid 0.5rem #ffb20f;
+  padding: 0.52rem 0 0.52rem 2rem;
+}
+
+.container-diferenciais {
+  background-color: white;
+}
+
+.caixa-titulo-diferencias {
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  padding: 4.88rem;
+  background-image: linear-gradient(225deg, #196b9f, #1a82a7);
+  color: white;
+}
+
+.caixa-restante-diferenciais {
+  padding: 4.88rem;
+  box-shadow: inset 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.15);
+}
+
+.caixa-itens-diferenciais {
+  position: relative;
+  border-radius: 3.5rem;
+  background-color: white;
+  box-shadow: 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.15);
+  padding: 3.12rem 2.5rem;
+}
+
+.caixa-imagem-diferenciais {
+  width: 100%;
+}
+
+.caixa-imagem-diferenciais img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  border-radius: 1.5rem;
+  background-color: #ffaf00;
+  width: 10rem;
+  height: 10rem;
+  padding: 1.6rem;
+  box-shadow: inset 0 0 0.8rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.diferenciais-h3 {
+  color: #005e88;
+  font-weight: 600;
+}
+
+.diferenciais-empresas-h3 {
+  font-weight: 400;
+}
+
+.diferenciais-empresas-h3 a {
+  color: #005e88;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.diferenciais-empresas img {
+  height: 5rem;
+  filter: grayscale(100%);
+}
+
+.logo-loreal,
+.logo-disney {
+  opacity: 60%;
+}
+
+.logo-subsea7,
+.logo-animale {
+  opacity: 75%;
+}
+/* Seção O que falam */
+
+.secao-oquefalam {
+  background-image: url(https://elegant-rabanadas-4b0397.netlify.app/Imagens/Formato%20Novo/BACKGROUN-banner-04.webp);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.oquefalam-titulo {
+  color: white;
+}
+
+.oquefalam-carrossel {
+  position: relative;
+}
+.oquefalam-carrossel-img {
+  background-color: #7489af;
+  background-blend-mode: multiply;
+  position: relative;
+  display: inline-block;
+  background-position: 50%;
+  background-size: cover;
+  aspect-ratio: 16/9;
+  width: 33%;
+  border-radius: 2.5rem;
+}
+
+.oquefalam-carrossel-img-1 {
+  background-image: url(https://i3.ytimg.com/vi/N_EZD04zmrw/hqdefault.jpg);
+}
+.oquefalam-carrossel-img-2 {
+  background-image: url(https://i3.ytimg.com/vi/auqWeBJLJHY/hqdefault.jpg);
+}
+.oquefalam-carrossel-img-3 {
+  background-image: url(https://i3.ytimg.com/vi/FD79IpCaM1Y/hqdefault.jpg);
+}
+
+.oquefalam-seta {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+}
+
+.seta-esquerda {
+  transform: translate(-150%, -65%);
+  left: 0;
+}
+
+.seta-direita {
+  transform: translate(160%, -65%);
+  right: 0;
+}
+
+.seta-player {
+  cursor: pointer;
+  width: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.item-de-navegacao {
+  cursor: pointer;
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: #86a8bc;
+}
+
+.item-de-navegacao .ativa {
+  background-color: #14577f;
+}
+
+.botao-oquefalam {
+  background-image: linear-gradient(180deg, #196c9f, #1a80a7);
+  border-bottom-color: #14577f;
+  border-right-color: #14577f;
+}
+
+.botao-oquefalam:hover {
+  border: solid 0.2rem #1a80a7;
+  background-image: none;
+  background-color: #1a80a7;
+}
+/*.oquefalam-realce {
+  font-weight: 600;
+}*/
+
+/*.navegacao-botao {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+} */
+
+/*Seção Mídia*/
+
+.secao-namidia {
+  padding-top: 3.9rem;
+  padding-bottom: 3.9rem;
+  background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUND-Banner-05_1.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.seta-namidia,
+.h2-namidia {
+  display: inline-block;
+}
+
+/*Seção Blog da Hashtag*/
+
+.container-blog {
+  position: relative;
+  background-color: #f9f9f9;
+  padding: 4.88rem;
+}
+
+.caixa-blog-h2 {
+  width: max-content;
+  background-image: linear-gradient(90deg, #feb914, #f6a50b);
+  padding: 1.02rem 3.12rem;
+}
+
+.caixa-postblog {
+  display: inline-block;
+  border-radius: 2.5rem;
+  box-shadow: inset 0 0 0.4rem 0.15rem rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  width: 49%;
+  background-color: #fff;
+}
+
+.caixa-postblog img {
+  width: 100%;
+}
+
+.blog-postadoem {
+  font-size: 1.33rem;
+  line-height: 1.5rem;
+}
+
+.blog-postadoem a {
+  font-weight: 600;
+  color: #f7a70c;
+  text-decoration: none;
+}
+
+.blog-titulopost {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/*Seção Como Ajudar*/
+
+/*.comoajudar-realce {
+  font-weight: 600;
+}*/
+.secao-comoajudar {
+  padding: 0;
+}
+
+.secao-sec-laranja,
+.secao-sec-cinza {
+  padding: 7.63rem 2rem;
+}
+
+.secao-sec-laranja {
+  background-image: url(https://elegant-rabanadas-4b0397.netlify.app/Imagens/Formato%20Novo/BACKGROUND-banner-07.webp);
+  background-position: 50%;
+  background-image: cover;
+  background-repeat: no-repeat;
+}
+
+.caixa-comoajudar-h2 {
+  display: inline-block;
+  padding: 0.42rem 1.6rem;
+  color: white;
+  border-radius: 1rem;
+  background-image: linear-gradient(90deg, #14a1d5, #1a8ad4);
+
+  box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.15);
+}
+
+.comoajudar-lista {
+  border-radius: 2.5rem;
+  box-shadow: inset 0 0 0.8rem 0.15rem rgba(0, 0, 0, 0.15);
+  padding: 2.5rem;
+  background-color: #f9f9f9;
+}
+
+.comoajudar-lista a:link,
+.comoajudar-lista a:visited,
+.comoajudar-p a:link,
+.comoajudar-p a:visited {
+  color: #008ff7;
+  font-weight: 600;
+}
+
+.comoajudar-lista a:hover,
+.comoajudar-lista a:active,
+.comoajudar-p a:hover,
+.comoajudar-p a:active {
+  color: #0056b3;
+}
+
+.comoajudar-p b {
+  font-weight: 600;
+}
+
+/* Mini Curso */
+
+.secao-minicurso {
+  background-image: linear-gradient(90deg, #9e4ad7, #753db6);
+  color: white;
+}
+
+.botao-minicurso {
+  background-color: #ffba29;
+  border-bottom-color: #664a10;
+  border-right-color: #664a10;
+}
+
+.botao-minicurso:hover {
+  border: solid 0.2rem #ffba29;
+}
+/* Rodapé */
+
+.logo-footer {
+  width: 18rem;
+}
+
+.rodape-titulo,
+.rodape-subtitulo,
+.rodape-seg-subtitulo {
+  font-weight: 600;
+}
+
+.rodape-link {
+  color: #1a77a4;
+}
+
+.rodape svg {
+  width: 2.4rem;
+}
+
+.link-redesociais:hover svg {
+  fill: #f60;
+  stroke: #f60;
+}
+
+.rodape a.link-redesociais:link,
+.rodape a.link-redesociais:visited,
+.rodape a.link-redesociais:hover,
+.rodape a.link-redesociais:active {
+  color: transparent;
+}
+
+.rodape a:hover,
+.rodape a:active {
+  color: #f60;
+}
+
+.form-newsltter {
+  border-radius: 2.5rem;
+  box-shadow: inset 0 0 0.8rem 0.15rem rgba(0, 0, 0, 0.15);
+  padding: 2.5rem;
+  background-color: #fff;
+}
+
+.botao-newsletter {
+  background-color: #1a77a4;
+  border-bottom-color: #0c374d;
+  border-right-color: #0c374d;
+}
+
+.botao-newsletter:hover {
+  border: solid 0.2rem #1a77a4;
+}
+
+.logo-whatsapp {
+  position: fixed;
+  right: 1rem;
+  bottom: 0.8rem;
+  width: 8.5rem;
+}
+
+.logo-whatsapp:hover {
+  transform: translate(0.5rem, 0.5rem);
+}
+
+.logo-whatsapp img {
+  width: 100%;
+}
